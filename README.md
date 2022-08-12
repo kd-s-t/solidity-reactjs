@@ -1,15 +1,15 @@
-# Solidity and React.js. 
-Backend: Solidity 0.8.7.   
-Database: Blockchain Etheruem Rapstin.   
-Frontend: React.js.   
-API request: Web3.js.   
+# Solidity and React.js 
+Backend: Solidity 0.8.7   
+Database: Blockchain Etheruem Rapstin   
+Frontend: React.js   
+API request: Web3.js   
 
 Solidity Deploy:  
-http://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=builtin&language=Solidity.   
+http://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=builtin&language=Solidity   
 
 References:  
-https://www.geeksforgeeks.org/build-a-to-do-list-web-application-powered-by-blockchain/.  
-https://www.youtube.com/watch?v=bZKVfXmzRDw.  
+https://www.geeksforgeeks.org/build-a-to-do-list-web-application-powered-by-blockchain/  
+https://www.youtube.com/watch?v=bZKVfXmzRDw  
 
 
 Connect REMIX to Web3 or Local PC (using Mac M1):
