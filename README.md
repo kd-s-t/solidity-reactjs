@@ -10,3 +10,7 @@ http://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=built
 References:  
 https://www.geeksforgeeks.org/build-a-to-do-list-web-application-powered-by-blockchain/.  
 https://www.youtube.com/watch?v=bZKVfXmzRDw.  
+
+
+Connect REMIX to Web3 or Local PC (using Mac M1):
+https://stackoverflow.com/questions/48273500/remix-not-possible-to-connect-to-the-web3-provider  
