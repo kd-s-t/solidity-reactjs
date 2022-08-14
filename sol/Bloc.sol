@@ -1,8 +1,14 @@
+// SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.7;
 
-// Creating a contract
-contract Bloc{
-	
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract Pine is ERC20, Ownable {
+    constructor() ERC20("Pine", "PINE") {
+        _mint(msg.sender, 1000000 * 10 ** decimals());
+    }
+
     // Defining a structure to
     // store a task
     struct Task

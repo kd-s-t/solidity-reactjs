@@ -1,6 +1,6 @@
 # [CRUD] Solidity and React.js  
 Backend: Solidity 0.8.7   
-Database: Blockchain Etheruem Rapstin   
+Database: Blockchain Etheruem Ganache   
 Frontend: React.js   
 API request: Web3.js   
 
@@ -18,3 +18,8 @@ https://stackoverflow.com/questions/48273500/remix-not-possible-to-connect-to-th
 # Instructions:  
 Run remixd remixd -s /tmp/ --remix-ide https://remix.ethereum.org   
 Run ganache ganache-cli -f https://bsc-dataseed.binance.org/   
+Copy Contract in sol folder and paste in remixd  
+Pick Ganache  
+Deploy Contract   
+npm install  
+npm run start  
