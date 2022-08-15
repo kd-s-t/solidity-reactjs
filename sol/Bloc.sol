@@ -5,10 +5,6 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Pine is ERC20, Ownable {
-    constructor() ERC20("Pine", "PINE") {
-        _mint(msg.sender, 1000000 * 10 ** decimals());
-    }
-
     // Defining a structure to
     // store a task
     struct Task
@@ -18,7 +14,11 @@ contract Pine is ERC20, Ownable {
     }
 
     mapping (address => Task[]) private Users;
-        
+
+    constructor() ERC20("Pine", "PINE") {
+        _mint(msg.sender, 1000000 * 10 ** decimals());
+    }
+
     // Defining function to add a task
     function addTask(string calldata _task) external
     {

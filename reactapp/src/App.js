@@ -9,14 +9,6 @@ if (typeof window.ethereum !== 'undefined') {
   console.log('Please install metamask!');
 }
 
-const NumberFormatter = (value, decimal) => {
-  return parseFloat(parseFloat(value).toFixed(decimal)).toLocaleString(
-    "en-IN",
-    {
-      useGrouping: true,
-    }
-  );};
-
 function App() {
   const [tasks,setTasks] = useState([])
   const [name,setName] = useState("")
@@ -76,7 +68,8 @@ function App() {
       setContract(contract)
       setDefaultAccount(accounts[0])
 
-      const bal = await contract.methods.balanceOf(contractAddress).call({ from: contractAddress });
+      const bal = await contract.methods.balanceOf(accounts[0]).call({ from: accounts[0] });
+      console.log("----",contract.methods)
       const decimals = await contract.methods.decimals().call();
       const bn = new BigNumber(bal + "e-" + decimals);
       let o = parseFloat(bn.toString()).toFixed(2)
